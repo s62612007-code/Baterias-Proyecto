@@ -1,0 +1,23 @@
+{
+  "name": "baterias-cali-saint",
+  "version": "1.0.0",
+  "description": "Sistema de Gestión — Baterías Cali Saint. Catálogo sincronizado con bateriacarro.com.co",
+  "author": "Ing. Santiago Martínez Vásquez",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server/index.js",
+    "start": "node server/index.js",
+    "build": "node scripts/build-static.js",
+    "deploy": "bash scripts/deploy-hondabateriacali.sh",
+    "sync:catalog": "node scripts/import-bateriacarro.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  }
+}

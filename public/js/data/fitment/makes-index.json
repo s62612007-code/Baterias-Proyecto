@@ -1,0 +1,302 @@
+[
+  {
+    "make": "AKT",
+    "slug": "akt",
+    "models": 3,
+    "years": 51
+  },
+  {
+    "make": "Audi",
+    "slug": "audi",
+    "models": 9,
+    "years": 189
+  },
+  {
+    "make": "BMW",
+    "slug": "bmw",
+    "models": 11,
+    "years": 252
+  },
+  {
+    "make": "BYD",
+    "slug": "byd",
+    "models": 6,
+    "years": 42
+  },
+  {
+    "make": "Bajaj",
+    "slug": "bajaj",
+    "models": 4,
+    "years": 97
+  },
+  {
+    "make": "Changan",
+    "slug": "changan",
+    "models": 5,
+    "years": 59
+  },
+  {
+    "make": "Chery",
+    "slug": "chery",
+    "models": 6,
+    "years": 76
+  },
+  {
+    "make": "Chevrolet",
+    "slug": "chevrolet",
+    "models": 26,
+    "years": 482
+  },
+  {
+    "make": "Citroën",
+    "slug": "citroen",
+    "models": 6,
+    "years": 135
+  },
+  {
+    "make": "DFSK",
+    "slug": "dfsk",
+    "models": 3,
+    "years": 33
+  },
+  {
+    "make": "Dodge",
+    "slug": "dodge",
+    "models": 4,
+    "years": 94
+  },
+  {
+    "make": "Fiat",
+    "slug": "fiat",
+    "models": 10,
+    "years": 174
+  },
+  {
+    "make": "Ford",
+    "slug": "ford",
+    "models": 15,
+    "years": 391
+  },
+  {
+    "make": "Foton",
+    "slug": "foton",
+    "models": 2,
+    "years": 38
+  },
+  {
+    "make": "Geely",
+    "slug": "geely",
+    "models": 3,
+    "years": 33
+  },
+  {
+    "make": "Great Wall",
+    "slug": "great-wall",
+    "models": 4,
+    "years": 48
+  },
+  {
+    "make": "Haval",
+    "slug": "haval",
+    "models": 4,
+    "years": 42
+  },
+  {
+    "make": "Hero",
+    "slug": "hero",
+    "models": 2,
+    "years": 57
+  },
+  {
+    "make": "Honda",
+    "slug": "honda",
+    "models": 10,
+    "years": 276
+  },
+  {
+    "make": "Honda Motos",
+    "slug": "honda-motos",
+    "models": 5,
+    "years": 165
+  },
+  {
+    "make": "Hyundai",
+    "slug": "hyundai",
+    "models": 16,
+    "years": 333
+  },
+  {
+    "make": "Isuzu",
+    "slug": "isuzu",
+    "models": 4,
+    "years": 113
+  },
+  {
+    "make": "JAC",
+    "slug": "jac",
+    "models": 7,
+    "years": 68
+  },
+  {
+    "make": "Jeep",
+    "slug": "jeep",
+    "models": 6,
+    "years": 150
+  },
+  {
+    "make": "KTM",
+    "slug": "ktm",
+    "models": 2,
+    "years": 46
+  },
+  {
+    "make": "Kia",
+    "slug": "kia",
+    "models": 13,
+    "years": 235
+  },
+  {
+    "make": "Land Rover",
+    "slug": "land-rover",
+    "models": 5,
+    "years": 149
+  },
+  {
+    "make": "Lexus",
+    "slug": "lexus",
+    "models": 5,
+    "years": 116
+  },
+  {
+    "make": "Lifan",
+    "slug": "lifan",
+    "models": 2,
+    "years": 19
+  },
+  {
+    "make": "MG",
+    "slug": "mg",
+    "models": 5,
+    "years": 61
+  },
+  {
+    "make": "MINI",
+    "slug": "mini",
+    "models": 2,
+    "years": 43
+  },
+  {
+    "make": "Mazda",
+    "slug": "mazda",
+    "models": 12,
+    "years": 192
+  },
+  {
+    "make": "Mercedes-Benz",
+    "slug": "mercedes-benz",
+    "models": 9,
+    "years": 247
+  },
+  {
+    "make": "Mitsubishi",
+    "slug": "mitsubishi",
+    "models": 9,
+    "years": 211
+  },
+  {
+    "make": "Nissan",
+    "slug": "nissan",
+    "models": 18,
+    "years": 461
+  },
+  {
+    "make": "Opel",
+    "slug": "opel",
+    "models": 4,
+    "years": 93
+  },
+  {
+    "make": "Peugeot",
+    "slug": "peugeot",
+    "models": 8,
+    "years": 141
+  },
+  {
+    "make": "Porsche",
+    "slug": "porsche",
+    "models": 4,
+    "years": 93
+  },
+  {
+    "make": "RAM",
+    "slug": "ram",
+    "models": 4,
+    "years": 90
+  },
+  {
+    "make": "Renault",
+    "slug": "renault",
+    "models": 16,
+    "years": 348
+  },
+  {
+    "make": "Seat",
+    "slug": "seat",
+    "models": 4,
+    "years": 86
+  },
+  {
+    "make": "Skoda",
+    "slug": "skoda",
+    "models": 4,
+    "years": 78
+  },
+  {
+    "make": "SsangYong",
+    "slug": "ssangyong",
+    "models": 3,
+    "years": 91
+  },
+  {
+    "make": "Subaru",
+    "slug": "subaru",
+    "models": 5,
+    "years": 126
+  },
+  {
+    "make": "Suzuki",
+    "slug": "suzuki",
+    "models": 10,
+    "years": 213
+  },
+  {
+    "make": "Tesla",
+    "slug": "tesla",
+    "models": 4,
+    "years": 44
+  },
+  {
+    "make": "Toyota",
+    "slug": "toyota",
+    "models": 16,
+    "years": 458
+  },
+  {
+    "make": "Volkswagen",
+    "slug": "volkswagen",
+    "models": 15,
+    "years": 322
+  },
+  {
+    "make": "Volvo",
+    "slug": "volvo",
+    "models": 5,
+    "years": 92
+  },
+  {
+    "make": "Yamaha",
+    "slug": "yamaha",
+    "models": 4,
+    "years": 106
+  }
+]

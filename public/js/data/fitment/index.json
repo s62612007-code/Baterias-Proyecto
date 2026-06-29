@@ -1,0 +1,42 @@
+{
+  "version": "2026.1",
+  "maxYear": 2026,
+  "minYear": 1990,
+  "makes": 50,
+  "models": 359,
+  "yearSlots": 7559,
+  "batteryBrands": [
+    "MAC",
+    "WILLARD",
+    "DUNCAN",
+    "VARTA",
+    "Bosch",
+    "AC Delco",
+    "Motorcraft",
+    "COEXITO",
+    "Rocket",
+    "Optima",
+    "Hankook",
+    "Yuasa",
+    "Magna",
+    "Beste"
+  ],
+  "segments": [
+    "subcompact",
+    "compact",
+    "sedan",
+    "sedan_large",
+    "hatch",
+    "suv_compact",
+    "suv_mid",
+    "suv_full",
+    "pickup_compact",
+    "pickup_full",
+    "van",
+    "commercial",
+    "hybrid",
+    "luxury",
+    "motorcycle",
+    "motorcycle_large"
+  ]
+}

@@ -1,0 +1,186 @@
+/* Honda Baterías Cali — identidad y catálogo estático */
+
+.site-header--honda {
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+  border-bottom: 3px solid #cc0000;
+}
+
+.site-header--honda .logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.site-header--honda .logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.site-header--honda .logo-text strong {
+  font-size: 1rem;
+  color: #cc0000;
+  letter-spacing: 0.04em;
+}
+
+.site-header--honda .logo-text span {
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.catalog-divider {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #fff;
+  padding: 2rem 0;
+  border-top: 4px solid #cc0000;
+  border-bottom: 4px solid #cc0000;
+}
+
+.catalog-divider__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.catalog-divider__brand {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.catalog-divider__logo {
+  height: 64px;
+  width: auto;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+}
+
+.catalog-divider__title {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.catalog-divider__title em {
+  color: #ff4444;
+  font-style: normal;
+}
+
+.catalog-divider__desc {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+  max-width: 36rem;
+}
+
+.catalog-divider__hint {
+  text-align: right;
+}
+
+.catalog-divider__hint strong {
+  display: block;
+  font-size: 1.125rem;
+  color: #ffcc00;
+}
+
+.catalog-divider__hint span {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+.section--catalog-static {
+  background: #f4f5f7;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.catalog-page-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  border-left: 4px solid #cc0000;
+}
+
+.catalog-page-info__range {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.catalog-page-info__range em {
+  color: #cc0000;
+  font-style: normal;
+}
+
+.catalog-page-info__steps {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.brand-pagination {
+  align-items: center;
+}
+
+.brand-pagination__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.brand-pagination__arrow {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--color-border);
+  background: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.brand-pagination__arrow:hover:not(:disabled) {
+  background: #cc0000;
+  color: #fff;
+  border-color: #cc0000;
+}
+
+.brand-pagination__arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.brand-pagination__pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.brand-carousel__pill--duncan.is-active {
+  background: #2d6a4f;
+  border-color: #2d6a4f;
+}
+
+@media (min-width: 768px) {
+  .site-header--honda .logo-img {
+    height: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  .catalog-divider__hint {
+    text-align: left;
+  }
+  .catalog-divider__logo {
+    height: 48px;
+  }
+}

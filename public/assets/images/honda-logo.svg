@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 72" role="img" aria-label="Honda Baterías Cali">
+  <defs>
+    <linearGradient id="hondaRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e60012"/>
+      <stop offset="100%" stop-color="#cc0000"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="72" rx="8" fill="#ffffff" stroke="#cc0000" stroke-width="2.5"/>
+  <g transform="translate(18,12)">
+    <rect x="0" y="0" width="48" height="48" rx="6" fill="url(#hondaRed)"/>
+    <text x="24" y="33" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="28" fill="#ffffff">H</text>
+  </g>
+  <text x="82" y="30" font-family="Arial,sans-serif" font-weight="700" font-size="15" fill="#1a1a1a">HONDA</text>
+  <text x="82" y="50" font-family="Arial,sans-serif" font-weight="600" font-size="13" fill="#cc0000">BATERÍAS CALI</text>
+</svg>

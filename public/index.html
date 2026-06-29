@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Honda Baterías Cali — Catálogo estático por marca. DUNCAN, MAC, VARTA, Bosch. 12 baterías por página. Oferta bateriacarro.com.co" />
+  <meta name="author" content="Ing. Santiago Martínez Vásquez" />
+  <title>Honda Baterías Cali — Catálogo por Marca</title>
+  <link rel="icon" href="assets/images/honda-logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <header class="site-header site-header--honda">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Honda Baterías Cali — Inicio">
+        <img class="logo-img" src="assets/images/honda-logo.svg" alt="Honda Baterías Cali" width="240" height="72" />
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#referencias">Referencias</a></li>
+          <li><a href="#contacto">Cotizar</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--whatsapp btn--sm" href="https://wa.me/573147691248?text=Hola%2C%20quiero%20cotizar%20una%20batería." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Página de inicio / landing -->
+    <section class="hero-banner" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badges">
+            <span class="hero-badge">Honda Baterías Cali</span>
+            <span class="hero-badge">Oferta bateriacarro.com.co</span>
+          </div>
+          <h1 id="hero-title">Baterías para su Honda y todo vehículo en Cali</h1>
+          <p>
+            Catálogo estático por marca — 12 productos por página, desde <strong>DUNCAN</strong> hasta cada fabricante.
+            Ing. Santiago Martínez Vásquez.
+          </p>
+          <div class="hero-cta-group">
+            <a class="btn btn--whatsapp" href="https://wa.me/573147691248?text=Hola%2C%20quiero%20cotizar%20una%20batería." target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+            <a class="btn btn--outline" href="#catalogo">Ver catálogo DUNCAN</a>
+          </div>
+        </div>
+        <div class="hero-showcase">
+          <figure class="hero-showcase__scene">
+            <img class="hero-showcase__battery" src="assets/images/honda-logo.svg" alt="Honda Baterías Cali" width="280" height="84" loading="eager" />
+            <figcaption class="hero-showcase__caption">Cotice · compre · instale</figcaption>
+          </figure>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>Carrera 15 # 36-80</strong>
+              <span>Retiro en sede · domicilio con compra</span>
+            </div>
+            <div class="stat-card">
+              <strong>314 769 1248</strong>
+              <span>Cotización WhatsApp 24/7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Separador con logo Honda → catálogo estático -->
+    <div class="catalog-divider" id="catalogo-top">
+      <div class="container catalog-divider__inner">
+        <div class="catalog-divider__brand">
+          <img class="catalog-divider__logo" src="assets/images/honda-logo.svg" alt="Honda Baterías" width="200" height="60" />
+          <div>
+            <h2 class="catalog-divider__title">Catálogo estático · <em>12 en 12</em></h2>
+            <p class="catalog-divider__desc">
+              Despliegue por marca. Inicia en <strong>DUNCAN</strong>, avance página a página y cambie de marca con las pestañas superiores.
+            </p>
+          </div>
+        </div>
+        <div class="catalog-divider__hint">
+          <strong>609 baterías</strong>
+          <span>Imágenes y precios · bateriacarro.com.co</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Catálogo estático (principal, justo después de la landing) -->
+    <section id="catalogo" class="section section--catalog-static" aria-labelledby="catalog-title">
+      <div class="container">
+        <h2 class="section-title visually-hidden" id="catalog-title">Catálogo por marca</h2>
+        <div class="catalog-toolbar">
+          <input id="catalog-search" class="catalog-search" type="search" placeholder="Buscar referencia… NS60, 42, 4D, AGM" aria-label="Buscar en catálogo" />
+          <div class="catalog-quick-links">
+            <a href="#marca-duncan" class="catalog-quick-link">Ir a DUNCAN</a>
+            <a href="#contacto" class="catalog-quick-link">Cotizar</a>
+          </div>
+        </div>
+        <p id="catalog-count" class="catalog-count" aria-live="polite"></p>
+        <div id="brand-carousel" class="brand-carousel-wrap" aria-label="Marcas de batería">
+          <button type="button" class="brand-carousel__prev" aria-label="Marcas anteriores">‹</button>
+          <div id="brand-jump" class="brand-carousel" role="tablist"></div>
+          <button type="button" class="brand-carousel__next" aria-label="Marcas siguientes">›</button>
+        </div>
+        <div id="brand-sections" class="brand-sections" aria-label="Catálogo por marca"></div>
+        <div id="accessories-bar" class="accessories-bar" aria-label="Accesorios"></div>
+      </div>
+    </section>
+
+    <section id="referencias" class="section section--alt" aria-labelledby="ref-title">
+      <div class="container">
+        <h2 class="section-title" id="ref-title">Por referencia de caja</h2>
+        <p class="section-subtitle">NS40, NS60, 42, 4D, 8D, AGM, Start-Stop — <a href="https://bateriacarro.com.co" target="_blank" rel="noopener">bateriacarro.com.co</a></p>
+        <p id="reference-count" class="catalog-count" aria-live="polite"></p>
+        <div id="reference-nav"></div>
+        <div id="reference-catalog" class="reference-catalog"></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section-title" id="contact-title">Cotizar y comprar</h2>
+        <div class="coverage-grid">
+          <div class="coverage-card">
+            <h3>Contacto Honda Baterías Cali</h3>
+            <ul>
+              <li>WhatsApp: 314 769 1248</li>
+              <li>Correo: bateriventas@outlook.com</li>
+              <li>Sede: Carrera 15 # 36-80, Cali</li>
+              <li>Domicilio: $20.000 · Descuento $40.000 por batería usada</li>
+            </ul>
+            <a class="btn btn--whatsapp" href="https://wa.me/573147691248?text=Hola%2C%20quiero%20cotizar%20una%20batería." target="_blank" rel="noopener noreferrer">Cotizar WhatsApp</a>
+          </div>
+          <div class="coverage-card">
+            <h3>Formas de pago</h3>
+            <ul>
+              <li>Efectivo · Nequi · Bancolombia · Davivienda</li>
+              <li>Datáfono móvil</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/images/honda-logo.svg" alt="Honda Baterías" width="160" height="48" style="margin-bottom:0.75rem" />
+          <p>Ing. Santiago Martínez Vásquez · Cali</p>
+        </div>
+        <div>
+          <h3>Catálogo</h3>
+          <ul>
+            <li><a href="#catalogo">Por marca (12 en 12)</a></li>
+            <li><a href="#marca-duncan">DUNCAN</a></li>
+            <li><a href="#referencias">Por referencia</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li>314 769 1248</li>
+            <li>Carrera 15 # 36-80</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Honda Baterías Cali · hondabateriacali.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-floating-btn" href="https://wa.me/573147691248?text=Hola%2C%20quiero%20cotizar%20una%20batería." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
