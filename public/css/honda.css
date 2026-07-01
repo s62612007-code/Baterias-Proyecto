@@ -1,4 +1,4 @@
-/* Honda Baterías Cali — tema negro y amarillo */
+/* Baterías Barracuda Taller Honda — tema negro y amarillo */
 
 .site-header--honda {
   background: #000;
@@ -277,40 +277,164 @@
   color: #d4b800;
 }
 
-/* Plymouth Barracuda flotante */
+/* Plymouth Barracuda — escena en movimiento */
 .barracuda-float {
   position: relative;
-  height: min(42vw, 320px);
-  min-height: 200px;
+  height: clamp(320px, 58vw, 560px);
+  min-height: 320px;
   overflow: hidden;
-  background: linear-gradient(180deg, #111 0%, #000 40%, #0a0a0a 100%);
+  background: #050505;
 }
 
-.barracuda-float__bg {
+.barracuda-float__sky {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 50% 90%, rgba(255, 204, 0, 0.2) 0%, transparent 55%),
-    radial-gradient(circle at 30% 70%, rgba(255, 204, 0, 0.06), transparent 45%);
+    radial-gradient(ellipse 120% 80% at 50% 110%, rgba(255, 204, 0, 0.22) 0%, transparent 55%),
+    radial-gradient(circle at 70% 20%, rgba(255, 204, 0, 0.06), transparent 40%),
+    linear-gradient(180deg, #0a0a0a 0%, #111 45%, #1a1a00 100%);
+  pointer-events: none;
+}
+
+.barracuda-float__speed-lines {
+  position: absolute;
+  inset: 15% 0 38% 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 48px,
+    rgba(255, 204, 0, 0.04) 48px,
+    rgba(255, 204, 0, 0.04) 52px,
+    transparent 52px,
+    transparent 120px
+  );
+  animation: barracuda-speed-lines 1.1s linear infinite;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.barracuda-float__road {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 38%;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 30%, #080808 100%);
+  border-top: 3px solid #ffcc00;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.barracuda-float__road-stripes {
+  position: absolute;
+  inset: 42% -100% 0 -100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 70px,
+    rgba(255, 204, 0, 0.85) 70px,
+    rgba(255, 204, 0, 0.85) 110px,
+    transparent 110px,
+    transparent 180px
+  );
+  animation: barracuda-road-scroll 0.65s linear infinite;
+}
+
+.barracuda-float__road-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 204, 0, 0.08), transparent);
+  animation: barracuda-road-glow 2s ease-in-out infinite;
+}
+
+.barracuda-float__car-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14%;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 1rem 0.5rem;
+  animation: barracuda-drive 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.barracuda-float__shadow {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  width: min(520px, 72vw);
+  height: 28px;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, rgba(0, 0, 0, 0.75) 0%, transparent 72%);
+  animation: barracuda-shadow 6s ease-in-out infinite;
   pointer-events: none;
 }
 
 .barracuda-float__car {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: min(900px, 95vw);
+  position: relative;
+  width: min(920px, 96vw);
+  max-height: clamp(180px, 38vw, 340px);
   height: auto;
-  transform: translateX(-50%);
-  animation: barracuda-float 5s ease-in-out infinite;
-  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 30px rgba(255, 204, 0, 0.15));
-  z-index: 1;
   object-fit: contain;
+  object-position: center bottom;
+  filter:
+    drop-shadow(0 24px 48px rgba(0, 0, 0, 0.85))
+    drop-shadow(0 0 40px rgba(255, 204, 0, 0.18));
+  animation: barracuda-car-bounce 6s ease-in-out infinite, barracuda-motion-pulse 1.2s ease-in-out infinite;
+  will-change: transform, filter;
 }
 
-@keyframes barracuda-float {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-12px); }
+@keyframes barracuda-speed-lines {
+  from { transform: translateX(0); }
+  to { transform: translateX(-120px); }
+}
+
+@keyframes barracuda-road-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-180px); }
+}
+
+@keyframes barracuda-road-glow {
+  0%, 100% { opacity: 0.4; transform: translateX(-5%); }
+  50% { opacity: 1; transform: translateX(5%); }
+}
+
+@keyframes barracuda-drive {
+  0% { transform: translateX(-14%) translateY(0) rotate(-1.2deg); }
+  25% { transform: translateX(-4%) translateY(-8px) rotate(0.4deg); }
+  50% { transform: translateX(10%) translateY(0) rotate(1deg); }
+  75% { transform: translateX(-2%) translateY(-6px) rotate(-0.5deg); }
+  100% { transform: translateX(-14%) translateY(0) rotate(-1.2deg); }
+}
+
+@keyframes barracuda-car-bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  35% { transform: translateY(-5px) scale(1.008); }
+  65% { transform: translateY(-3px) scale(1.004); }
+}
+
+@keyframes barracuda-motion-pulse {
+  0%, 100% {
+    filter:
+      drop-shadow(0 24px 48px rgba(0, 0, 0, 0.85))
+      drop-shadow(0 0 40px rgba(255, 204, 0, 0.18));
+  }
+  50% {
+    filter:
+      drop-shadow(0 28px 52px rgba(0, 0, 0, 0.9))
+      drop-shadow(-8px 0 18px rgba(255, 204, 0, 0.12))
+      drop-shadow(8px 0 18px rgba(255, 204, 0, 0.12))
+      drop-shadow(0 0 50px rgba(255, 204, 0, 0.28));
+  }
+}
+
+@keyframes barracuda-shadow {
+  0%, 100% { transform: translateX(-50%) scaleX(0.92); opacity: 0.65; }
+  50% { transform: translateX(-42%) scaleX(1.08); opacity: 0.85; }
 }
 
 .ref-carousel-panel__num {
@@ -362,7 +486,26 @@
     height: 48px;
   }
   .barracuda-float {
-    min-height: 160px;
-    height: 45vw;
+    min-height: 280px;
+    height: clamp(280px, 65vw, 400px);
+  }
+
+  .barracuda-float__car {
+    max-height: clamp(140px, 42vw, 220px);
+  }
+
+  .barracuda-float__car-wrap {
+    bottom: 16%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .barracuda-float__car,
+  .barracuda-float__car-wrap,
+  .barracuda-float__road-stripes,
+  .barracuda-float__speed-lines,
+  .barracuda-float__road-glow,
+  .barracuda-float__shadow {
+    animation: none;
   }
 }

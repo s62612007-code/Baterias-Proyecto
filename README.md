@@ -1,12 +1,12 @@
-# Sistema de Gestión — Baterías Cali Saint
+# Baterías Barracuda Taller Honda
 
-Plataforma digital centralizada para la gestión, consulta y cotización del catálogo de **Baterías Cali Saint**, publicada en **[www.bateriascali.es](https://www.bateriascali.es)**.
+Plataforma digital de **Baterías Barracuda Taller Honda** para consulta y cotización del catálogo, publicada en **[www.bateriascali.es](https://www.bateriascali.es)**.
 
 ---
 
-## 1. Acerca de Baterías Cali Saint
+## 1. Acerca de Baterías Barracuda Taller Honda
 
-Baterías Cali Saint es una compañía especializada fundada por el **Ing. Santiago Martínez Vásquez**, un profesional con amplia trayectoria en el sector del almacenamiento energético. El modelo operativo de este software está alineado con los estándares de suministro de **[Batteries Plus USA](https://www.batteriesplus.com/)**, la plataforma líder en el mercado norteamericano para la distribución de acumuladores.
+**Baterías Barracuda Taller Honda** es el taller especializado de baterías automotrices en Cali, fundado por el **Ing. Santiago Martínez Vásquez**. Catálogo completo por marca, modelo y referencia de caja — con identidad Barracuda y servicio Taller Honda.
 
 Nos enfocamos de forma exclusiva en la provisión, diagnóstico avanzado y mantenimiento de baterías de alta capacidad para vehículos particulares, transporte de carga y maquinaria pesada.
 
@@ -14,7 +14,7 @@ Nos enfocamos de forma exclusiva en la provisión, diagnóstico avanzado y mante
 
 ## 2. Descripción del Proyecto
 
-Este sistema es la plataforma digital centralizada de Baterías Cali Saint diseñada para agilizar la cadena de suministro de energía móvil. Inspirada en los buscadores técnicos avanzados de **[Batteries Plus](https://www.batteriesplus.com/battery/car-and-truck)**, la herramienta permite filtrar componentes por especificaciones exactas de amperaje, tamaño de grupo y configuraciones de terminales.
+Este sistema es la plataforma digital de **Baterías Barracuda Taller Honda**, diseñada para agilizar la cotización y venta de baterías. Inspirada en buscadores técnicos avanzados, permite filtrar por marca de vehículo, modelo, año y referencia de caja.
 
 Bajo la dirección del Ing. Santiago Martínez Vásquez, el software integra pruebas de conductancia en tiempo real para asegurar el rendimiento de baterías automotrices e industriales.
 
@@ -74,8 +74,8 @@ El ecosistema digital implementa un diseño de alta disponibilidad avalado por l
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/s62612007-code/Baterias-Proyecto.git
-cd Baterias-Proyecto
+git clone https://github.com/s62612007-code/Baterias-Barracuda-Taller-Honda.git
+cd Baterias-Barracuda-Taller-Honda
 ```
 
 ### 2. Configurar variables de entorno
@@ -154,4 +154,4 @@ Toda adición de código o integración de nuevos proveedores de baterías debe 
 
 ---
 
-*Baterías Cali Saint · Ing. Santiago Martínez Vásquez · Cali, Colombia*
+*Baterías Barracuda Taller Honda · Ing. Santiago Martínez Vásquez · Cali, Colombia*

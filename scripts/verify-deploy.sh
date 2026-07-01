@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Verificación rápida del despliegue Honda Baterías
+# Verificación rápida del despliegue Barracuda Taller Honda
 set -euo pipefail
 BASE="${VERIFY_URL:-${SITE_URL:-https://www.bateriascali.es}}"
 BASE="${BASE%/}"

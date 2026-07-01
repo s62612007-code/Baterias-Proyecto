@@ -21,7 +21,7 @@ function copyRecursive(src, dest) {
 }
 
 function writeHtaccess() {
-  const htaccess = `# Honda Baterías Cali — sitio estático (rutas por hash #)
+  const htaccess = `# Baterías Barracuda Taller Honda — sitio estático (rutas por hash #)
 DirectoryIndex index.html
 
 <IfModule mod_expires.c>

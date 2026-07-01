@@ -13,7 +13,7 @@ app.use(express.static(publicDir));
 app.get('/api/health', (_req, res) => {
   res.json({
     status: 'ok',
-    name: 'Baterías Cali Saint',
+    name: 'Baterías Barracuda Taller Honda',
     catalogSource: process.env.CATALOG_CDN || 'https://bateriacarro.com.co',
   });
 });
@@ -23,6 +23,6 @@ app.get('*', (_req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Baterías Cali Saint → http://localhost:${PORT}`);
+  console.log(`Baterías Barracuda Taller Honda → http://localhost:${PORT}`);
   console.log(`Catálogo: ${process.env.CATALOG_CDN || 'https://bateriacarro.com.co'}`);
 });

@@ -1,5 +1,5 @@
 export const BUSINESS = {
-  name: 'Baterías Cali Saint',
+  name: 'Baterías Barracuda Taller Honda',
   owner: 'Ing. Santiago Martínez Vásquez',
   phone: '3147691248',
   phoneDisplay: '314 769 1248',
