@@ -74,6 +74,29 @@ async function main() {
     console.log(success ? `✓ fitment/${file}` : `✗ fitment/${file}`);
   }
 
+  const makesDir = path.join(fitmentDir, 'makes');
+  const makesIndexPath = path.join(fitmentDir, 'makes-index.json');
+  const fitmentFallback = process.env.FITMENT_CDN
+    || 'https://raw.githubusercontent.com/s62612007-code/bateriascalisa/main/js/data/fitment';
+
+  if (fs.existsSync(makesIndexPath)) {
+    const makesIndex = JSON.parse(fs.readFileSync(makesIndexPath, 'utf8'));
+    let makesOk = 0;
+    let makesFail = 0;
+    for (const { slug } of makesIndex) {
+      const dest = path.join(makesDir, `${slug}.json`);
+      const fromCdn = await downloadFile(`${CDN}/js/data/fitment/makes/${slug}.json`, dest);
+      if (fromCdn) {
+        makesOk += 1;
+        continue;
+      }
+      const fromFallback = await downloadFile(`${fitmentFallback}/makes/${slug}.json`, dest);
+      if (fromFallback) makesOk += 1;
+      else makesFail += 1;
+    }
+    console.log(`✓ fitment/makes: ${makesOk} ok, ${makesFail} fallidas`);
+  }
+
   console.log('Sincronización completada.');
 }
 
