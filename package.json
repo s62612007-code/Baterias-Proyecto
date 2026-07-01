@@ -14,7 +14,9 @@
     "deploy:clean": "python3 scripts/cleanup-ftp-honda.py",
     "deploy:hondabateriacali": "bash scripts/deploy-hondabateriacali.sh",
     "deploy:bateriascali.es": "bash scripts/deploy-bateriascali-es.sh",
+    "deploy:both": "bash scripts/deploy-both-sites.sh",
     "verify:deploy": "bash scripts/verify-deploy.sh",
+    "verify:security": "bash scripts/verify-security.sh",
     "check:ns97": "bash scripts/check-ns97.sh",
     "sync:catalog": "node scripts/import-bateriacarro.js",
     "test": "node --test tests/*.test.js"

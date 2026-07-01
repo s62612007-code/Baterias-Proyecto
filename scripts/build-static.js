@@ -21,8 +21,34 @@ function copyRecursive(src, dest) {
 }
 
 function writeHtaccess() {
-  const htaccess = `# Baterías Barracuda Taller Honda — sitio estático (rutas por hash #)
+  const htaccess = `# Baterías Barracuda Taller Honda — sitio estático seguro
 DirectoryIndex index.html
+Options -Indexes
+
+# Forzar HTTPS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# Cabeceras de seguridad
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+  Header always set X-XSS-Protection "0"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://bateriacarro.com.co; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self' https://wa.me; frame-ancestors 'self'; upgrade-insecure-requests"
+</IfModule>
+
+# Bloquear archivos sensibles si existieran en el servidor
+<FilesMatch "(^\\.|\\.env|\\.git|package\\.json|package-lock\\.json|\\.md$)">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</FilesMatch>
 
 <IfModule mod_expires.c>
   ExpiresActive On
